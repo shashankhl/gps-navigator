@@ -1,0 +1,93 @@
+:root {
+  --color-brand--1: #ca2424;
+  --color-brand--2: #00c46a;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+  --color-gray--1: #c3c3c3;
+}
+
+/* Hide the default route information */
+.leaflet-routing-container {
+  display: none !important;
+}
+
+body {
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+#map {
+  height: 450px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.dark-popup {
+  background-color: #f50101;
+  color: #fff;
+  padding: 10px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #3b4f60;
+  font-size: 15px;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #c2d5e5;
+  font-size: 15px;
+  border: none;
+  margin: 5px;
+  padding: 10px 20px;
+  color: black;
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: var(--color-dark--1);
+  color: var(--color-light--2);
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.5rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: var(--color-dark--1);
+}
+
+.start-popup .leaflet-popup-content-wrapper {
+  border-left: 10px solid var(--color-brand--2);
+}
+.end-popup .leaflet-popup-content-wrapper {
+  border-left: 10px solid var(--color-brand--1);
+}
+
+.route-container {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  max-width: 400px; /* Set maximum width of the container */
+  max-height: 500px; /* Set maximum height of the container */
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* Ensure it appears on top of the map */
+}
+
+.route-popup-content {
+  overflow-y: auto;
+  max-height: 100%;
+}

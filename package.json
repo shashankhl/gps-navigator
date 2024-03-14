@@ -1,0 +1,15 @@
+{
+  "name": "gps-navigator",
+  "version": "1.0.0",
+  "description": "GPS Navigator is a web application designed to provide efficient navigation solutions using HTML, CSS, and JavaScript. The core functionality of this project is based on Dijkstra's algorithm, which enables the determination of the shortest distance between two locations on a map. Whether you're planning a road trip, a daily commute, or simply exploring new places, GPS Navigator has got you covered.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shashank h l",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

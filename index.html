@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/256/1416/1416444.png"
+    />
+    <title>GPS Navigator</title>
+    <link rel="stylesheet" href="main/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <h1><center>GPS Navigator</center></h1>
+    <div id="map"></div>
+    <div class="controls">
+      <button onclick="resetMap()">Reset Map</button>
+      <button onclick="findShortestPath()">Find Shortest Path</button>
+      <button onclick="createGraphVisualization()">
+        Create Graph Visualization
+      </button>
+    </div>
+    <div id="routeContainer" class="route-container">
+      <div id="routePopupContent" class="route-popup-content"></div>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+    <script src="main/script.js"></script>
+  </body>
+</html>
